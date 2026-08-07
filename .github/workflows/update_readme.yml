@@ -13,11 +13,12 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+
       - uses: untalrobert/github-activity-readme@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           COMMIT_MSG: "Actualizar README con actividad reciente"
           MAX_LINES: 10
-          COMMIT_NAME: GitHub Activity Readme
-          COMMIT_EMAIL: github-actions[bot]@users.noreply.github.com
+          COMMIT_NAME: untalrobert
+          COMMIT_EMAIL: untalrobertt@gmail.com
